@@ -14,7 +14,7 @@ function mudaEstiloNav(item, servicoClicado) {
 }
 
 function mudaConteudo(listaConteudo, servicoClicado) {
-  for (i = 0; i < listaConteudo.length; i++) {
+  for (let i = 0; i < listaConteudo.length; i++) {
     if (listaConteudo[i].id) {
       listaConteudo[i].style.display = "none";
       if (listaConteudo[i].id === servicoClicado) {
@@ -26,8 +26,40 @@ function mudaConteudo(listaConteudo, servicoClicado) {
 }
 
 function atualizaServico(servicoClicado) {
-  for (i = 0; i < navLinks.length; i++) {
+  for (let i = 0; i < navLinks.length; i++) {
     mudaEstiloNav(navLinks[i], servicoClicado);
   }
   mudaConteudo(listaConteudo, servicoClicado);
 }
+
+document
+  .getElementById("id__cca--js")
+  .addEventListener("click", () => atualizaServico("cca"));
+
+document
+  .getElementById("id__ceg--js")
+  .addEventListener("click", () => atualizaServico("ceg"));
+
+document
+  .getElementById("id__cgda--js")
+  .addEventListener("click", () => atualizaServico("cgda"));
+
+document
+  .getElementById("id__cfor--js")
+  .addEventListener("click", () => atualizaServico("cfor"));
+
+document
+  .getElementById("id__pei--js")
+  .addEventListener("click", () => atualizaServico("pei"));
+
+document
+  .getElementById("id__nap--js")
+  .addEventListener("click", () => atualizaServico("nap"));
+
+document
+  .getElementById("id__nd--js")
+  .addEventListener("click", () => atualizaServico("nd"));
+
+document
+  .getElementById("id__ng--js")
+  .addEventListener("click", () => atualizaServico("ng"));
