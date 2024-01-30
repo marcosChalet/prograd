@@ -2,7 +2,7 @@
 
 ## Produção
 
-Veja a ppagina rodando [aqui](https://prograd-beta.vercel.app).
+Veja a página rodando [aqui](https://prograd-beta.vercel.app).
 
 ## Testar
 
